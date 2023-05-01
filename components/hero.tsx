@@ -26,6 +26,8 @@ export default function Hero() {
           </svg>
         </div>
 
+        
+
         {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
 
