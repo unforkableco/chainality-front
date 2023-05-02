@@ -2,22 +2,18 @@
 import { Planet } from 'react-planet';
 
 function Center() {
-  return <div style={{
-      height: 68,
-      width: 200,
-      textAlign: 'center',
-      fontSize: '2.2rem'
-    }}>
-    Chainality Ecosystem
-    </div>
+  return <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" style={{height: "50px"}}>
+  <h1 className="h1 mb-4 text-orange-300" data-aos="fade-up">CHAINALITY</h1>
+  <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Your future Tokenized Assets Exchange</p>
+</div>
 }
 
 function Items(props : any) {
   let style : any = props.left? {position: "absolute", right: "180px", top: "10px", textAlign: "right", width: "200px", display: "none"} : {position: "absolute", left: "180px", top: "10px", width: "200px", display: "none"}
   return <div style={style} className='data'>
     <ul>
-      {props.items.map((item : string) => {
-        return <li id={item}>{item}</li>
+      {props.items.map((item : string, index : number) => {
+        return <li id={"_" + index}>{item}</li>
       })}
     </ul>
   </div>
@@ -37,13 +33,13 @@ function Petal(props : any) {
 
 function MyFlower() {
 	return (
-    <div style={{width: "200px", height: "200px", margin: "auto"}}>
+    <div style={{width: "320px", height: "320px", margin: "auto"}}>
       <Planet
 			centerContent={
 				<Center />
 			}
 			hideOrbit
-      orbitRadius={200}
+      orbitRadius={250}
       open
       >
       <Petal title="Identity" color="#0097B2" left items={["KYC", "Country based access", "Social recovery"]}/>

@@ -25,10 +25,8 @@ export default function Features() {
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-              <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-violet-600" width="64" height="64" rx="32" />
-                <path className="stroke-current text-violet-100" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd" />
-                <path className="stroke-current text-violet-300" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
+              <svg fill="#ff0000" className="w-16 h-16 mb-4" viewBox="0 0 184.751 184.751" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z"/>
               </svg>
               <h4 className="h4 mb-2">Identity</h4>
               <p className="text-lg text-gray-400 text-center">Reliable KYC process allowing to follow regulatory rules with international exchange standards</p>
