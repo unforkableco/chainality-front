@@ -52,3 +52,13 @@
 .hex:hover > .data {
     display: block !important;
 }
+
+.flower {
+    display:none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+      .flower {
+        display:block;
+      }
+  }

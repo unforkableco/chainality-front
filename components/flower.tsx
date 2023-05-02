@@ -2,10 +2,14 @@
 import { Planet } from 'react-planet';
 
 function Center() {
-  return <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" style={{height: "50px"}}>
-  <h1 className="h1 mb-4 text-orange-300" data-aos="fade-up">CHAINALITY</h1>
-  <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Your future Tokenized Assets Exchange</p>
-</div>
+  return <div style={{
+      height: 68,
+      width: 200,
+      textAlign: 'center',
+      fontSize: '2.2rem'
+    }}>
+    Chainality Ecosystem
+    </div>
 }
 
 function Items(props : any) {
@@ -33,13 +37,13 @@ function Petal(props : any) {
 
 function MyFlower() {
 	return (
-    <div style={{width: "320px", height: "320px", margin: "auto"}}>
+    <div style={{width: "200px", height: "200px", margin: "auto", marginTop: "50px"}}>
       <Planet
 			centerContent={
 				<Center />
 			}
 			hideOrbit
-      orbitRadius={250}
+      orbitRadius={200}
       open
       >
       <Petal title="Identity" color="#0097B2" left items={["KYC", "Country based access", "Social recovery"]}/>
@@ -56,7 +60,7 @@ function MyFlower() {
 
 export default function Flower() {
   return (
-    <section>
+    <section className='flower'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6" style={{}}>
         <div className="py-12 md:py-20">
           <MyFlower/>

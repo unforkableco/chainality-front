@@ -1,3 +1,7 @@
+import DLTImage from '@/public/images/DLT.png'
+import LegalImage from '@/public/images/legal.png'
+import Image from 'next/image'
+
 export default function Features() {
   return (
     <section>
@@ -98,6 +102,30 @@ export default function Features() {
             </div>
 
           </div>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h2 mb-4 text-violet-500">Unique blockchain</h2>
+            <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+              <Image
+                src={DLTImage}
+                width={1024}
+                alt="DLT"
+                priority
+              />
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h2 mb-4 text-violet-500">Unique legal framework</h2>
+            <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+              <Image
+                src={LegalImage}
+                width={1024}
+                alt="Legal"
+                priority
+              />
+            </div>
+          </div>
+
 
         </div>
       </div>
