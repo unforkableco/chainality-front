@@ -2,8 +2,6 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import Modal from '@/components/utils/modal'
-import HeroImage from '@/public/images/hero-image-01.jpg'
 
 export default function Hero() {
 
@@ -41,22 +39,12 @@ export default function Hero() {
           {/* <div>
             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
               <Image
-                src={HeroImage}
+                src={Timeline}
                 width={1024}
                 alt="Hero"
                 priority
               />
             </div>
-            
-            <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
-              <div className="relative pb-9/16">
-                <video className="absolute w-full h-full" width="1920" height="1080" loop controls>
-                  <source src="/videos/video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> 
-              </div>
-            </Modal>
-
           </div> */}
 
         </div>

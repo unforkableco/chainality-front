@@ -9,6 +9,7 @@ import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Flower from '@/components/flower'
 import Testimonials from '@/components/testimonials'
+import Investment from '@/components/investment'
 
 export default function Home() {
   return (
@@ -16,9 +17,10 @@ export default function Home() {
       <Hero />
       <Flower />
       <Features />
-      {/* <Zigzag /> */}
+      <Zigzag />
+      <Investment />
       {/* <Testimonials /> */}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </>
   )
 }
